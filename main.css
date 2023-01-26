@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+*{
+    font-family: sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    background-color: black;
+    position: fixed;  
+   
+    z-index: 2;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+.background {
+    z-index: -1;
+    width: 100%;
+    margin-top: 0px;
+
+}
+.img {
+    color: white;
+    position: absolute; 
+    margin-top: 200px;
+    top: 100px;  
+    width: 100%;
+    text-align:  center;
+    font-size: 6vw;
+    z-index: 1;
+}
+
+nav li{
+    display: inline;
+    justify-content: center;
+    margin: 70px;
+}
+nav ul{
+    background-color: black;
+    opacity: .5;
+    margin: 0;
+    list-style-type: none;
+    width:100%;
+    padding: 20px;
+}
+
+nav{
+    display: block;
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+ nav a:hover{
+    color: goldenrod;
+ }
+.card{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #aaa ;
+}
+.footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: white;
+    margin:px;
+    padding: 20px;
+    margin-bottom: 1px solid grey;
+     Margin:20px;
+    border-bottom: 1px solid lightgray;
+    padding: 40px;
+    color: rgb(48, 47, 47);
+   
+
+}
+.info{
+    background-color: white;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+button{
+    display: block;
+    height: min-content;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #f7c548;
+    border: 1px solid #cba035;
+    margin-top: 50px;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-gray {
+    background-color: #e7e9ec;
+    border: 1px solid #b3b4b5;
+    
+}
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
