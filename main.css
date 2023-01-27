@@ -1,129 +1,161 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: black;
-}
 *{
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
-
-
-nav {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    background-color: black;
-    position: fixed;  
-   
-    z-index: 2;
-    
-}
-a {
+/* Global Styling */
+a{
     text-decoration: none;
     color: white;
+}
+.btn{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    border: 1px solid #B4C7D4;
+    border-radius: 2px;
     
 }
-.background {
-    z-index: -1;
+body{
+    margin: auto;
+}
+/* header */
+header{
+    display:flex;
+    align-items: centre;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+header .title{
+    padding-left: 100px;
+    font-size: x-large;
+    width: 50%;
+    
+}
+.title h3{
+    font-weight: 100;
+}
+header .nav{
+    display: flex;
+    list-style-type: none;
+    padding-top: 20px;
     width: 100%;
-    margin-top: 0px;
+    align-items: left;
+    color: white;
+    gap: 100px;
+    font-size: large;
 
+}
+
+/* main */
+.hero img{
+    width: 100%;
+    margin-top: 0;
 }
 .img {
     color: white;
-    position: absolute; 
+    position: absolute;
     margin-top: 200px;
-    top: 100px;  
+    top: 300px;  
     width: 100%;
     text-align:  center;
     font-size: 6vw;
     z-index: 1;
+    font-weight: 300;
 }
-
-nav li{
-    display: inline;
-    justify-content: center;
-    margin: 70px;
-}
-nav ul{
-    background-color: black;
-    opacity: .5;
+.shows{
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    list-style-type: none;
-    width:100%;
-    padding: 20px;
-}
-
-nav{
-    display: block;
-    color: white;
-}
-
-nav a{
-    color: white;
-    text-decoration: none;
-}
- nav a:hover{
-    color: goldenrod;
- }
-.card{
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #aaa ;
-}
-.footer{
-    background-color: black;
-    color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.card{
-    background-color: white;
-    margin:px;
-    padding: 20px;
-    margin-bottom: 1px solid grey;
-     Margin:20px;
-    border-bottom: 1px solid lightgray;
-    padding: 40px;
-    color: rgb(48, 47, 47);
-   
-
-}
-.info{
-    background-color: white;
-    padding-left: 400px;
-    padding-right: 400px;
-}
-button{
-    display: block;
-    height: min-content;
-    justify-content: center;
-    padding: 8px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    background-color: #f7c548;
-    border: 1px solid #cba035;
     margin-top: 50px;
+   
 }
-.btn {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-}
-
-.btn-gray {
-    background-color: #e7e9ec;
-    border: 1px solid #b3b4b5;
+.card{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    margin-top: 20px;
+    padding: 20px;
+    border-bottom: 1px dashed lightgray;
+    
     
 }
-p{
-    margin-left: 20px;
-    margin-right: 20px;
+.card-btn a{
+    color: black;
+    width: 600px;
+    object-fit: contain;
+    padding-left: 20px;
+    background-color: rgb(237, 237, 237);
+}
+.card-btn{
+    border-bottom: none;
+    
+}
+.btn-yellow{
+    background-color: rgb(230, 183, 12);
+    height: fit-content;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+
+/* footer */
+footer{
+    background-color: black;
+}
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    background-color: black;
+    justify-content: center;
+    margin-top: 10px;
+    width: fit-content;
+}
+.footer li{
+    color: white;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+.footer h3{
+    color:white
+    
+}
+.map{
+    margin:40px;
+}
+/* media */
+@media(max-width: 1000px){
+    header{
+        display: none;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .card{
+        max-width: 370px;
+        margin: auto;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        max-width: 370px;
+        margin: 129px auto;
+        text-align: center;
+        
+    }
+  
+    .card-btn a{
+        background-color: white;
+        border: none;
+        color: green;
+        font-weight: 600;
+        font-size: large;
+        text-align: center;
+    }
+    .img{
+        position:sticky;
+       color: black;
+       margin-top: 0;
+      
+    }
 }

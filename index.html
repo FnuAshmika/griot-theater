@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Griot Theater</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><span>Griot Theater</span></li>
+    <header>
+        <div class="title">
+            <h3>Griot Theater</h3>   
+        </div>
+        <ul class="nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
+            <li><a href="#">Our Actors</a></li>
             <li><a href="#">Mission</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
-    <section class="hero-img">
-        <div>
-            <img src="./images/theater.png" alt="" class="background">
-            <h1 class="img">Featured Shows</h1>
-        </div>  
-    </section>
+    </header>
     <main>
-        <div class="info"  >
-            <div class="card">
+        <section class="hero">
+            <img class="background"src="./images/theater.png" alt="">
+            <h1 class="img">Featured Shows</h1>
+        </section>
+        <section class="shows">
+            <div class="card card-btn">
                 <a href="" class="btn btn-gray">April 2020</a>
             </div>
             <div class="card">
@@ -34,7 +35,7 @@
                     April 6, 2020 - March 20, 2020<br>
                     Griot Theatre 233 State St Chicago,IL<br><br>
                     $75</p>
-                <button type="button">READ MORE</button>
+                <a href="" class="btn btn-yellow">Read More</a>
             </div>
             <div class="card">
                 <img src="./images/star.png" width="100px">
@@ -42,7 +43,7 @@
                     April 6, 2020 - March 20, 2020<br>
                     Griot Theatre 233 State St Chicago,IL<br><br>
                     $75</p>
-                <button type="button">READ MORE</button>
+                <a href="" class="btn btn-yellow">Read More</a>
             </div>
             <div class="card">
                 <img src="./images/star.png" width="100px">
@@ -50,7 +51,7 @@
                     April 6, 2020 - March 20, 2020<br>
                     Griot Theatre 233 State St Chicago,IL<br><br>
                     $75</p>
-                <button type="button">READ MORE</button>
+                <a href="" class="btn btn-yellow">Read More</a>
             </div>
             <div class="card">
                 <img src="./images/star.png" width="100px">
@@ -58,60 +59,38 @@
                     April 6, 2020 - March 20, 2020<br>
                     Griot Theatre 233 State St Chicago,IL<br><br>
                     $75</p>
-                <button type="button">READ MORE</button>
+                <a href="" class="btn btn-yellow">Read More</a>
             </div>
 
-        </div>
-
+        </section>
     </main>
-    <footer class="footer">
-        <div>
-            <img src="./images/map.png" width="200" alt="" >
-        </div>
-        <div >
-            <div >Info</div>
-            <div>
-                <p>📍Charlotte, NC 28111</p>
+    <footer>
+        <section class="footer">
+            <div class="map">
+                <img src="./images/map.png" width="300px"alt="">
             </div>
-            <div >
-                <p>&#x1F4E7;example@example.com</p>
-            </div>
-            <div>
-                <p>&#9743;Call Us: (704)-123-4567</p>
-            </div>
-        </div>
-        <div >
-            <div >Shows</div>
-            <div >
-                <a href="#">The Piano Lesson</a>
-            </div>
-            <div >
-                <a href="#">A Raisin in the Sun</a>
-            </div>
-            <div >
-                <a href="#">FAME</a>
-            </div>
-            <div >
-                <a href="#">The Color Purple</a>
-            </div>
-        </div>
-        <div >
-            <div >Social</div>
-            <div>
-                <a href="#facebook">Facebook</a>
-            </div>
-            <div >
-                <a href="#twitter"> Twitter</a>
-            </div>
-            <div >
-                <a href="#youtube">Youtube</a>
-            </div>
-            <div >
-                <a href="#instagram">Instagram</a>
-            </div>
+            <ul>
+                <h3>Info</h3>
+                <li>📍Chicago, Il 60611. United States</li>
+                <li>&#x1F4E7; example@example.com</li>
+                <li>&#9743; 708-555-4488</li>
+            </ul>
+            <ul>
+                <h3>Shows</h3>
+                <li>The Piano Lession</li>
+                <li>A Raisin In Sun</li>
+                <li>FAME</li>
+                <li>The Color Purple</li>
+            </ul>
+            <ul>
+                <h3>Social</h3>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+                <li><a href="https://www.youtube.com">Yutube</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+            </ul>
 
-        </div>
+        </section>
     </footer>
-    
 </body>
 </html>
